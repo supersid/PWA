@@ -1,0 +1,192 @@
+/* Global Settings */
+
+body {
+    /* because body takes 8px of margin */
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+#topbar {
+    background-color: #333333;
+    padding: 20px 0px;
+}
+
+#topbar a,
+#topbar p {
+    color: #fff;
+    font-weight: bold;
+}
+
+#topbar .sale {
+    width: 40%;
+}
+
+#topbar .sale a {
+    color: #F48D27;
+}
+
+#topbar .user_menu {
+    width: 30%;
+}
+
+#topbar .user_menu ul {
+    display: flex;
+}
+
+#topbar .user_menu ul li {
+    margin: 0px 20px;
+    font-size: 14px;
+}
+
+#topbar .cart {
+    width: 10%;
+    text-align: right;
+}
+
+#topbar .cart i {
+    color: #fff;
+}
+
+#header {
+    padding-top: 20px;
+}
+
+#header .logo {
+    width: 36%;
+}
+
+#header .logo a {
+    display: block;
+    color: #000;
+}
+
+#header .logo a span {
+    color: #FF5722;
+}
+
+#header .logo h1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header .user_section {
+    width: 62%;
+}
+
+#header .user_section .secondary_nav {
+    margin-bottom: 20px;
+}
+
+#header .user_section .secondary_nav ul {
+    display: flex;
+}
+
+#header .user_section .secondary_nav ul li {
+    margin-right: 20px;
+    border-right: 1px solid #000;
+    padding-right: 22px;
+    font-size: 14px;
+}
+
+#header .user_section .secondary_nav ul li a {
+    color: #000;
+    letter-spacing: 1px;
+}
+
+#header .user_section .secondary_nav a i {
+    color: #FF5722;
+}
+
+#header .search .col-1 {
+    width: 90%;
+}
+
+#header .search .col-2 {
+    width: 10%;
+}
+
+#header .search input[type='text'] {
+    width: 90%;
+    padding: 10px;
+    height: 40px;
+}
+
+#header .user_section .col-2 {
+    padding: 10px;
+}
+
+#main-navigation {}
+
+#content {}
+
+#main {}
+
+#sidebar {}
+
+#footer {}

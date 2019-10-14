@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            min-height: 500px;
+        }
+        
+        div:not(#home) {
+            display: none;
+        }
+        
+        #products:target,
+        #cart:target,
+        #contact:target {
+            display: block;
+        }
+        
+        #products:target~#home,
+        #cart:target~#home,
+        #contact:target~#home {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Single Page Demo</h1>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="products">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+        <img src="../images/Category_iphone.jpg" alt="">
+    </div>
+
+    <div id="cart">
+        <h2>This is your cart</h2>
+        <h3>Total : 30000</h3>
+    </div>
+
+    <div id="contact">
+        <h2>This is contact page</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, aperiam dignissimos soluta eos et hic, fugiat consequatur error commodi esse dolore quis a aliquam odit! Soluta magnam cumque eligendi itaque?
+        </p>
+    </div>
+
+    <div id="home">
+        <h2>This is home page</h2>
+    </div>
+
+</body>
+
+</html>

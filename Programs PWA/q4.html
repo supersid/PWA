@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Salary Calculator</title>
+    <script type="text/javascript">
+        function get_salary() {
+            var sal = prompt("Please enter your basic salary: ");
+            hra = (0.30 * sal)
+            da = (0.70 * sal)
+            ta = (0.10 * sal)
+            pf = (0.05 * sal)
+            gs = (sal + hra + da + ta - pf)
+            tax = (0.10 * gs)
+            ns = gs - tax
+            var result = "HRA = "+hra+"\n"
+                        +"DA = "+da+"\n"
+                        +"TA = "+ta+"\n"
+                        +"PF = "+pf+"\n"
+                        +"GS = "+gs+"\n"
+                        +"tax = "+tax+"\n"
+                        +"NS = "+ns+"\n"
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        get_salary();
+    </script>
+</body> 
+</html>

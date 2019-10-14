@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent>h2 {
+            color: greenyellow;
+        }
+        
+        #parent+h2 {
+            color: pink;
+        }
+        #parent+parent_1
+        {
+            color: orange;
+        }
+        #parent~parent_2{
+         color: pink;
+         }  
+    </style>
+</head>
+
+<body>
+
+    <h1>Advance Selectors</h1>
+
+    <div id="parent">
+        <h2>This is inside parent</h2>
+        <h2>This is inside parent</h2>
+        <div class="child_1">
+            <h2>This is inside child</h2>
+        </div>
+        <h2>This is inside parent</h2>
+        <div class="child_2">
+            <h2>This is inside child</h2>
+        </div>
+    </div>
+    <div id="parent_1">
+        <h2>This is inside parent</h2>
+        <h2>This is inside parent</h2>
+        <div class="child_3">
+            <h2>This is inside child</h2>
+        </div>
+        <h2>This is inside parent</h2>
+        <div class="child_4">
+            <h2>This is inside child</h2>
+        </div>
+    </div>
+    <div id="parent_2">
+        <h2>This is inside parent</h2>
+        <h2>This is inside parent</h2>
+        <div class="child_4">
+            <h2>This is inside child</h2>
+        </div>
+        <h2>This is inside parent</h2>
+        <div class="child_5">
+            <h2>This is inside child</h2>
+        </div>
+    </div>
+    <hr>
+
+    <h2>This heading is outside parent</h2>
+    <h2>This heading is outside parent</h2>
+    <h2>This heading is outside parent</h2>
+
+</body>
+
+</html>

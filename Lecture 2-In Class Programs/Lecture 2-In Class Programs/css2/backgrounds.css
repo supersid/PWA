@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    background-image: url("https://statics.sportskeeda.com/wp-content/uploads/2013/11/sachin-tendulkar-hd-desktop-wallpapers.2-2022746.jpg");
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Parallax Effect */
+
+div {
+    height: 400px;
+    /* background-size: 100% 100%; */
+    background-size: inherit;
+    margin-bottom: 400px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://i.ndtvimg.com/i/2017-02/sachin-tendulkar-century-afp_806x605_51487917458.jpg");
+}
+
+#div_2 {
+    background-image: url("http://media1.santabanta.com/full1/Cricket/Sachin%20Tendulkar/sachin-tendulkar-79a.jpg");
+}
+
+#div_3 {
+    background-image: url("http://img.en.eenaduindia.com/Article/201807250953061641_Id-pick-Sachin-Tendulkar-to-bat-for-my-life_SECVPF.gif");
+}
+
+#div_4 {
+    background-image: url("https://icc-static-files.s3.amazonaws.com/ICC/photo/2018/08/28/3c0c94fe-168b-4270-96c5-cf9856327eb8/GettyImages-111487120.jpg");
+}
+
+#div_5 {
+    background-image: url("https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/WORLD-CUP_0.jpg");
+}

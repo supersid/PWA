@@ -1,0 +1,323 @@
+/* Global Settings */
+
+body {
+    /* because body takes 8px of margin */
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F3F6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #2874F0;
+    padding: 8px 0px;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .logo {
+    width: 8%;
+}
+
+#header .logo .explore {
+    font-size: 12px;
+    position: relative;
+    font-style: italic;
+    display: block;
+}
+
+#header .logo .explore span {
+    color: #ffe500;
+}
+
+#header .logo .explore img {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    width: 13%;
+}
+
+#header .search {
+    width: 50%;
+    margin-left: 20px;
+    position: relative;
+}
+
+#header .search input[type="text"] {
+    width: 100%;
+    padding: 0px 5px;
+    height: 30px;
+}
+
+#header .search button {
+    position: absolute;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    top: 10px;
+}
+
+#header .userSection {
+    width: 32%;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+#header .userSection ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#main-navigation {
+    border-bottom: 1px solid #000;
+    position: relative;
+    background-color: #fff;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 24px;
+}
+
+#main-navigation ul li a {
+    color: #000;
+    display: block;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    width: 96%;
+    left: 0px;
+    padding: 20px;
+    display: none;
+}
+
+#main-navigation .dropdown ul li {
+    display: block;
+    margin: 0px;
+}
+
+#main-navigation .dropdown .col {
+    width: 100%;
+    padding: 20px;
+}
+
+#main-navigation .dropdown .col:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#banner {
+    position: relative;
+    min-height: 690px;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#slider {
+    width: 500%;
+    animation: slider 50s infinite linear;
+}
+
+.slide {
+    display: inline-block;
+    width: 20%;
+    margin: 0px -2px;
+}
+
+@keyframes slider {
+    0%,
+    18% {
+        transform: translateX(0%);
+    }
+    20%,
+    38% {
+        transform: translateX(-20%);
+    }
+    40%,
+    58% {
+        transform: translateX(-40%);
+    }
+    60%,
+    78% {
+        transform: translateX(-60%);
+    }
+    80%,
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+#section_1 {
+    position: absolute;
+    top: 200px;
+}
+
+#section_1 .col {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0px 20px;
+    transition: 1s;
+}
+
+#section_1 .col:hover {
+    box-shadow: 0px 0px 30px black;
+}
+
+#section_2 {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.products {
+    background-color: #fff;
+}
+
+.products ul {
+    justify-content: space-around;
+}
+
+.products ul li {
+    width: 13%;
+    text-align: center;
+}
+
+.products ul li img {
+    width: 100%;
+    transition: 0.2s;
+}
+
+.products ul li img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#section_3 {
+    overflow: hidden;
+    padding: 20px;
+}
+
+#section_3 img {
+    width: 100%;
+}
+
+#section_3 .col-1 {
+    width: 25%;
+    padding: 20px;
+    background-color: #444653;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#section_3 .col-2 {
+    width: 50%;
+}
+
+#section_3 .col-3 {
+    width: 25%;
+}
+
+#section_3 .col-1 a,
+#section_3 .col-1 h2 {
+    color: #fff;
+}
+
+#section_3 .col-1 h2 {
+    margin-bottom: 30px;
+}
+
+#section_3 .col-1 ul li a {
+    display: block;
+    padding: 15px;
+}
+
+#section_3 .col-1 ul li:hover a {
+    background-color: #3D3F4B;
+}
+
+#section_3 .col-2 {
+    background-size: 100% 100%;
+    background-image: url("https://n4.sdlcdn.com/imgs/h/s/o/MS_HPwidgets_2x1_Sweatshirts-038b2.jpg");
+}
+
+#section_3 .col-3 .img_2,
+#section_3 .col-3 .img_3 {
+    display: block;
+    height: 220px;
+    background-size: 100% 100%;
+}
+
+#section_3 .col-3 .img_2 {
+    margin-bottom: 20px;
+    background-image: url("https://n1.sdlcdn.com/imgs/h/s/o/MS_HPwidgets_2x1_FadedJeans-3aec4.jpg");
+}
+
+#section_3 .col-3 .img_3 {
+    background-image: url("https://n1.sdlcdn.com/imgs/h/s/o/MS_HPwidgets_2x1_FadedJeans-3aec4.jpg");
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}

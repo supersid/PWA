@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      textarea {
+      resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+    <!--  <fieldset>
+      <legend>Registration form</legend>
+      </fieldset> 
+      
+      
+      <fieldset>
+          <legend>Registration form</legend>
+          <form action="#">
+              <!-- <table border = 2px; > -->
+    <!--<table>
+      <tr>
+              <td>Enter Name</td>
+              <td>
+                  <input type="text" placeholder="Enter Name" autocomplete="off" readonly required value="Ram">
+              </td>
+          </tr>
+          <tr>
+              <td>Enter Password</td>
+              <td>
+                  <input type="password" placeholder="Enter Password" autocomplete="off" readonly required value="ram1223">
+              </td>
+              <tr>
+                      <td>Enter Email</td>
+                      <td>
+                          <input type="email" autofocus placeholder="Enter Email">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Enter Age</td>
+                      <td>
+                          <input type="number" min="18" max="50">
+                      </td>
+                  </tr>
+                  <tr>
+                          <td>Enter Phone Number</td>
+                          <td>
+                              <input type="text" title="Only digits are allowed, length will be 10" pattern="[0-9]{10}" placeholder="Enter ph no">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Select Country</td>
+                          <td>
+                              <input list="datalist">
+                              <datalist id="datalist">
+                                  <option value="India"></option>
+                                  <option value="China"></option>
+                                  <option value="Africa"></option>
+                                  <option value="Italy"></option>
+                                  <option value="Germany"></option>
+                                  <option value="France"></option>
+                                  <option value="Brazil"></option>
+                              </datalist>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Choose Color</td>
+                          <td>
+                              <input type="color">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Enter DOB</td>
+                          <td>
+                              <input type="date">
+                          </td>
+                          <td>
+                              <input type="time">
+                          </td>
+                          <td>
+                              <input type="datetime-local">
+                          </td>
+                      </tr>                    <tr>
+      <td></td>
+      <td></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      </tr>
+      </table>
+      
+      
+      
+      </form>
+      </fieldset>-->
+    <fieldset>
+      <legend>Registration Form</legend>
+      <form action="#">
+        <table>
+          <tr>
+            <td>Enter Name</td>
+            <td>
+              <input type="text" placeholder="Enter Name" autocomplete="off" readonly required value="Ram">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Password</td>
+            <td>
+              <input type="password" placeholder="Enter Password" autocomplete="off" readonly required value="ram1223">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Email</td>
+            <td>
+              <input type="email" autofocus placeholder="Enter Email">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Age</td>
+            <td>
+              <input type="number" min="18" max="50">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Phone Number</td>
+            <td>
+              <input type="text" placeholder="Enter ph no" maxlength="10">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Phone Number</td>
+            <td>
+              <input type="text" title="Only digits are allowed, length will be 10" pattern="[0-9]{10}" placeholder="Enter ph no">
+            </td>
+          </tr>
+          <tr>
+            <td>Select Country</td>
+            <td>
+              <input list="datalist">
+              <datalist id="datalist">
+                <option value="India"></option>
+                <option value="China"></option>
+                <option value="Africa"></option>
+                <option value="Italy"></option>
+                <option value="Germany"></option>
+                <option value="France"></option>
+                <option value="Brazil"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Choose Color</td>
+            <td>
+              <input type="color">
+            </td>
+          </tr>
+          <tr>
+            <td>Enter DOB</td>
+            <td>
+              <input type="date">
+            </td>
+            <td>
+              <input type="time">
+            </td>
+            <td>
+              <input type="datetime-local">
+            </td>
+          </tr>
+          <tr>
+            <td>Select Range</td>
+            <td>
+              <input type="range" value="2000" min="1000" max="5000" onchange="output.value = value" step="100">
+            </td>
+            <td>
+              <output id="output">2000</output>
+            </td>
+          </tr>
+          <tr>
+            <td>Enter your Message</td>
+            <td>
+              <textarea spellcheck="false" cols="30" placeholder="Enter your message" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="reset">
+            </td>
+            <td>
+              <input type="submit">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* after and before */
+
+ .row:after { 
+     content: ""; 
+     clear: both; 
+     display: block;  
+ } 
+
+.row {
+    background-color: lightgreen;
+    border: 2px solid blue;
+}
+
+.column-1 {
+    /* background-color: lightblue; */
+    float: left;
+    width: 40%;
+}
+
+.column-2 {
+    float: right;
+    width: 40%;
+    /* background-color: lightcoral; */
+}
+
+.blank {
+    clear: both;
+}
+
+.div_1 {
+    border: 2px solid red;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Funky Features</title>
+    <style>
+    div
+    {
+        height: 300px;
+        width: 250px;
+        border: 12px solid blue;
+        /* border-radius: 76%; */
+        /* box-shadow: 0px 0px 26px green; */
+        /* overflow: hidden; */
+        perspective: 1000px;
+    } 
+     img
+    {
+        height: inherit;
+        width: 100%;
+        transform-origin: left;
+        transition-duration: 1s;
+    }
+    div:hover img
+    {
+        transform: rotateY(279deg);
+        /* transform: skewX(186deg); */
+        /* transform: skewY(59deg); */
+        /* transform: scale(2.5,2.5); */
+    }
+    img#ani
+    {
+        height: 50px;
+        width: 50px;
+        animation-name: anim1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+    }
+    /* @keyframes anim1
+    {
+        from
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+        to
+        {
+            bottom: 80%;
+            left: 45%;
+        }
+    }
+    @keyframes anim1
+    {
+        from
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+        to
+        {
+            bottom: 80%;
+            left: 45%;
+        }
+    }
+    @keyframes anim1
+    {
+        from
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+        to
+        {
+            bottom: 80%;
+            left: 45%;
+        }
+    }
+    @keyframes anim1
+    {
+        from
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+        to
+        {
+            bottom: 80%;
+            left: 45%;
+        }
+    } */
+    @keyframes anim1
+    {
+        0%
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+        25%
+        {
+            bottom: 45%;
+            left: 0%;
+            transform: rotate(720deg);
+        }
+        50%
+        {
+            left: 45%;
+            bottom: 80%;
+        }
+        75%
+        {
+            left: 90%;
+            bottom: 45%;
+        }
+        100%
+        {
+            bottom: 0px;
+            left: 45%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <center><h1>New Funky Features</h1>
+    <div>
+        <img src='C:\Users\Sid44\Desktop\college\Progressive Web Apps\images\images\iron-man-png-hd-iron-man-picture-png-image-1108.png'>
+    </div></center>
+        <img id='ani' src='C:\Users\Sid44\Desktop\college\Progressive Web Apps\images\images\football-157930__340.png'>
+</body>
+</html>

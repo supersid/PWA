@@ -1,0 +1,95 @@
+body {
+    /* width: 50%; */
+    background-color: lightgray;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+#header {
+    text-align: center;
+    background-color: lightblue;
+    position: fixed;
+    width: 100%;
+    /* to manage the layers that are given positions absolute. */
+    /* z-index tells that which layer will be on top */
+    z-index: 100;
+    /* right: 0px; */
+    /* bottom: 0px; */
+    top: 0px;
+}
+
+#content {
+    margin-top: 100px;
+}
+
+#sidebar_1 {
+    width: 20%;
+    background-color: #fff;
+    position: fixed;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+#sidebar_1 ul li {
+    text-align: center;
+    /* top right bottom left */
+    /* padding: 10px 12px 14px 16px; */
+    /* top right/left bottom */
+    /* padding: 10px 12px 14px; */
+    /* top/bottom left/right */
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+#sidebar_1 ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+#main {
+    width: 53%;
+    background-color: #fff;
+    margin-left: 21%;
+    padding: 10px;
+}
+
+.images {
+    position: relative;
+}
+
+.image_1 {
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    top: 50%;
+    margin-left: -5%;
+    margin-top: -5%;
+}
+
+#sidebar_2 {
+    width: 22%;
+    background-color: #fff;
+    padding: 8px;
+}

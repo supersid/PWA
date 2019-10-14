@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent a,
+        #content a {
+            text-decoration: none;
+        }
+        
+        #parent .logo a {
+            color: red;
+        }
+        
+        #navigation ul a {
+            color: green;
+        }
+        /* Attribute Selector */
+        
+         .search input[type='submit'] {
+            background-color: red;
+        } 
+        
+        #navigation ul li:first-child {
+            background-color: lightgoldenrodyellow;
+        }
+        
+        #navigation ul li:last-child {
+            background-color: lightsalmon;
+        }
+        
+        #navigation ul li:nth-child(3) {
+            background-color: aqua;
+        }
+        
+        #navigation ul li:nth-child(odd) {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="parent">
+        <div class="logo">
+            <h2>
+                <a href="#">
+                    Company Logo
+                </a>
+            </h2>
+        </div>
+        <div id="navigation">
+            <!-- ul>li*6>a -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="content">
+        <a href="#">This is link_1</a>
+        <a href="#">This is link_2</a>
+        <a href="#">This is link_3</a>
+    </div>
+
+</body>
+
+</html>

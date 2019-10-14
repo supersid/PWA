@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            border: 2px solid red;
+            padding: 10px;
+            perspective: 600px;
+        }
+        
+        img {
+            width: 100%;
+            height: inherit;
+            transition-duration: 2s;
+            transform-origin: left;
+        }
+        
+        div:hover img {
+            transform: rotateX(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Perspective</h1>
+
+    <div>
+        <img src="../images/pexels-photo-415526.jpeg" alt="">
+    </div>
+
+</body>
+</html>

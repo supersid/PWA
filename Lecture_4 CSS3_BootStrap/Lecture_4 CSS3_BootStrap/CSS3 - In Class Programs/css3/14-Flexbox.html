@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: flex; 
+            /* justify-content: flex-end;  */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            align-items: flex-start;  
+            /* align-items: flex-end;  */
+            /* align-items: center;  */
+        }
+        
+        .col-1,
+        .col-2,
+        .col-3 {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 0px 10px;
+        }
+        
+        header {
+            background-color: lightblue;
+            width: 20%;
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .col-1 {
+            width: 20%;
+        }
+        
+        .col-2 {
+            width: 50%;
+        }
+        
+        .col-3 {
+            width: 20%;
+        }
+        
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display:inline;
+             display: flex;  
+        flex-wrap: wrap;    
+            justify-content: space-around;  
+        }
+        
+        li {
+            border: 2px solid red;
+            height: 200px;
+            width: 30%;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>Flexbox</h1>
+    </header>
+
+    <div id="parent">
+        <div class="col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor laborum, perspiciatis iste, non quo laboriosam dolores atque recusandae perferendis fugit incidunt eos adipisci odio deserunt vero voluptatem tempora impedit.
+            </p>
+            <img src="../images/flower-3140492_960_720.jpg" alt="">
+            <img src="../images/flower-3140492_960_720.jpg" alt="">
+        </div>
+        <div class="col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor laborum, perspiciatis iste, non quo laboriosam dolores atque recusandae perferendis fugit incidunt eos adipisci odio deserunt vero voluptatem tempora impedit.
+            </p>
+            <img src="../images/gettyimages-98690722-612x612.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor laborum, perspiciatis iste, non quo laboriosam dolores atque recusandae perferendis fugit incidunt eos adipisci odio deserunt vero voluptatem tempora impedit.
+            </p>
+            <img src="../images/gettyimages-98690722-612x612.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor laborum, perspiciatis iste, non quo laboriosam dolores atque recusandae perferendis fugit incidunt eos adipisci odio deserunt vero voluptatem tempora impedit.
+            </p>
+            <img src="../images/gettyimages-98690722-612x612.jpg" alt="">
+        </div>
+        <div class="col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor laborum, perspiciatis iste, non quo laboriosam dolores atque recusandae perferendis fugit incidunt eos adipisci odio deserunt vero voluptatem tempora impedit.
+            </p>
+            <img src="../images/flower-3140492_960_720.jpg" alt="">
+        </div>
+    </div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>

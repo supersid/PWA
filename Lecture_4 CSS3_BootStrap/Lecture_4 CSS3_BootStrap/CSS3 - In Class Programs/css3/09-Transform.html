@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            padding:10px;
+            /* border: 5px solid red;
+            border-radius: 50%;   
+            overflow: hidden;   */
+        perspective: 300px;
+            /* perspective: 300px; */
+            /* box-shadow: 10px -30px 0px red;    */
+             /* transition-duration: 1s;   */
+             /* transform: scale(0.2, 0.2) rotateX(0deg);         */
+        }
+        
+        img{
+            height: inherit;
+            width: 100%;
+            transition-duration: 1s;
+            transform-origin: left;  
+        }
+        div: image hover{
+            transform: rotateX(180deg);
+        }
+
+        
+        /* div: image hover{
+             transform: translateX(200px);   
+             /* transform: translateY(-100px);   */
+             /* transform: translate(900px, 100px); */ 
+            transform: rotateX(360deg); 
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(3600deg); */
+            /* transform: translateX(900px) rotateZ(720deg); */
+             /* transform: scale(3,2.5);  */
+             /* transform:rotate(260deg);   */
+            /* transform: matrix3d() */
+            /* transform: skewX(180deg);  
+             transform: skewY(80deg); */
+         
+    </style>
+</head>
+
+<body>
+
+    <h1>Transformations</h1>
+
+    <div>
+        <img src="../images/images.jpg" alt=""> 
+    </div>
+
+</body>
+
+</html>

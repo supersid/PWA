@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- GET and POST -->
+    <form action="login.html" method="post">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="userpwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Country</td>
+                <td>
+                    <select name="country">
+                        <option>Choose Country</option>
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="fr">France</option>
+                        <option value="it">Italy</option>
+                        <option value="gr">Germany</option>
+                        <option value="th">Thailand</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Programming</td>
+                <td>
+                    <input type="checkbox"> Java
+                    <input type="checkbox"> Python
+                    <input type="checkbox"> JavaScript
+                    <input type="checkbox"> php
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
